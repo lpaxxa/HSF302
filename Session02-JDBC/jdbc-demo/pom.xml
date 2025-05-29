@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lpaxxa.superapp</groupId>
+    <artifactId>jdbc-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>24</maven.compiler.source>
+        <maven.compiler.target>24</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+        <!--TA CẦN JDBC LÀ BỘ THƯ VIỆN NỀN ĐC PT BỞI ,MICROSOFT ĐỂ GIÚP CÁC DEV JAVA CHƠI VỚI SQL SẺVER.
+        VÀO PHÒNG THI PE, DỀ NGHỊ GIÁM THỊ CHO VÀO WIFI ĐỂ TẢI DEPENDENCY-->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.10.0.jre11</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>

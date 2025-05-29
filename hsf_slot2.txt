@@ -1,0 +1,107 @@
+app trong window đuôi.exe
+Các câu lệnh cần nhớ ở CMD (CommandLine, Command Prompt, Terminal, Powershell)
+- DIR -> in ra các nội dung, tên tập tin, thư mục bên trong nơi đang đuứng
+      -> macos,linux: ls ( chữ thường)
+      -> powershell: dir,ls    ( chữ nào cũngdđược)
+- Color -H -> bảng màu chữ  chọn
+- Color -> trả lại default đen trăng
+- CD -> Change directory, thay đổi thư mục nơi đang đứng
+- CD <TÊN THƯ MỤC CON> -> LÀ ĐI SAU XUÔNNG
+- CD ..                -> LÀ NGOI LÊN MỘT MỨC
+- CD ..\..             -> NGOI LÊN 2 MỨC
+- CD \		       -> VỀ GỐC LUÔN
+-----> macos, Linux -> phân biệt hoa thường, phải thường, windows thoải mái
+ 
+1.CÁC LỆNH HAY DÙNG TRONG MAVEN
+*MAVEN LÀ GÌ??
+- mvn clean -> LỆNH NÀY SẼ XÓA TOÀN BỘ THƯ MỤC TARGET
+             (BÊN NETBEANS, NÓ SẼ CÓA HAI THƯ MỤC \BUILD VÀ \DIST
+- mvn package -> LÊỆNH NÀY SẼ BIÊN DỊCH, ÓNG GÓI APP
+                BIẾN ĐỔI SRC CODE .JAVA -> .CLASS -> 
+                NÉN TOÀN BỘ VÀ TRĂM .CLASS ĐANG CÓ
+		TRONG PROJECT THÀNH .JAR .WAR -> APP
+- mvn clean package -> Clean and Build bên NETBEANS
+ 	            -> XÓA HẾT \TARGET, VÀ TẠO LẠI APP MỚI
+- mvn install ....	    -> GIÚP APP CHÚNG TA SÁNH NGANG VAI CUNÙNG CAC CƯỜNG QUỐC 5 CHÂU
+
+	            -> SẼ GIÚP ĐÓNG GÓI APP NHƯ BT, RA .JAR, .WAR Ở TARGET 
+			SAU ĐÓ SẼ COPY FILE .JAR NÀY LÊN KHO JAR LOCAL
+			 MAF MAVEN HAY DÙNG ĐỂ TẢI VÀ LƯU CÁI FILE .JAR DOWNLOADS
+			 VỀ TỪ KHO TÔNG, ~ THU MỤC DOWNLOADS VÀO THƯ MỤC NÀY,
+			 BẠN SẼ THẤY FILE .JAR CỦA MINH SÁNH VAI CÙNG .JAR CỦA MICROSOFT
+2. CÁC LỆNH CHẠY APP JAVA
+CÓ 3 LOẠI APP
+*CONSOLE APP ( APP MÀ CHẠY TRÊN MÀN HÌNH ĐEN THUI CMD, TERMINAL)
+ GỌI .EXE ,HOẶC GỌI .JAR CÓ HÀM MAIN()
+
+*DESKTOP APP ( CHẠY TRÊN MAN HÌNH NỀN MÁY TÍNH, MOBILE)
+GỌI .EXE SAU LƯNG, GỌI .JAR CÓ HÀM MAIN()
+CÔNG NGHỆ JAVA FX
+
+*WEB APP ( CHẠY TRÊN TRÌNH DUYỆT   HTTPS://...)
+CÔNG NGHỆ: SPRINGMVC   => THI PE!!!!!
+
+	   SPRINGBOOT + FE NAÀ ĐÓNG (REACT,VUE,ANGULAR...)
+
+
+----->
+*CONSOLE APP ( APP MÀ CHẠY TRÊN MÀN HÌNH ĐEN THUI CMD, TERMINAL)
+ GỌI .EXE ,HOẶC GỌI .JAR CÓ HÀM MAIN()
+>java -cp tên-file-jar-có-hàm-main
+		tên-package-và-tên-class-chứa-hàm-main
+
+>java -jar tên-file-jar là đủ
+			NHƯNG !!!!
+java -jar target\maven-to-go-22.04.jar
+
+3.MAVEN DEPENDENCY
+-MVNREPOSITORY.COM - WEBSITE CHỨA TOÀN BỘ FILE .JAR CỦA NHAN LOẠI
+-NHỮNG FILE .JJAR NÀY CHÍNH LÀ CÁC THƯ VIỆN, MỖI THƯ VIỆN SẼ GIÚP DÂN DEV LÀM VIỆC Ì ĐÓ, VÍ DỤ CÓ THƯ VIỆN GIÚP DÂN DEV GỂNATE QR, CÓ THƯ VIỆN GIÚP ẼPORT PD, CÓ THƯ VIỆN GIÚP IPORT TỪ EXCEL TA TỰ VIẾT HỘC MÁU, NÊN TA XÀI LẠI CỦA NGTA
+- TRÊN MVNREPO CÓ CẢ TỈ FILE .JAR, LÀM SAO QUERY, TÌM RA, DOWNLOAD ĐC ĐÚNG FILE .JAR TA CẦN, CHƯA KỂ FILE.JAR NÀY NÓ LẠI PHỤ THUỘC VÀO FILE .JAR KHÁC ( MÌNH LÀM THƯ VIỆN ĐỂ THAO TÁC CSDL, MÌNH ĐÓNG GÓI APP MÌNH THÀNH .JAR, NHƯNG BẢN THÂN MÌNH LẠI CẦN JDBC .JAR
+-MAVEN NGHĨ RA 1 CƠ CHẾ QUẢN LÝ FILE .JAR
+THÔNG QUA 1 FILE .JAR PHẢI CÓ 1 CĂN CƯỚC DUY NHẤT GỒM 3 INFO
+   - FILE .JAR NÀY THUỘC SỞ HỮU CỦA AI, GỌI LÀ <groupId></groupId>
+   - File .JAR NÀY CÓ TÊN LÀ GÌ  	       <artifactId></artifactId>
+   - FILE .JAR NÀY CÓ VERSION MẤY              <version></version>
+
+3 ÌNO NÀY ĐỦ ĐỂ PHÂN BIỆT THƯ VIỆN CỦA CTY NÀY VỚI CTY KHÁC CHẤP TRÙNG TÊN NHAU, TRUNG VERSION NHƯNG KHÁC CTYY CŨNG GIÚP PHÂN BIỆT CÁC THƯ VIỆN CỦA CÙNG 1 CTY, QUA VERSION
+
+- MỘT FILE .JAR LUÔN CÓ HỒ SƠ NÀY ĐI KÈM ĐỂ GIÚP TÌM RA NÓ
+- INTELLIJ, NETBEANS, ECLIPSE KHI CÀI VÀO MÁY CÓ TÍCH HỢP SẴN MỘT PHIÊN BẢN MAVEN NÀY HIỂU DC 1 BỘ HỒ SƠ NÀY
+VÀ NÓ QUI ƯỚC 1 PROJECT CỦA DEV NẾU MUỐN XÀI THƯ VIỆN NÀO THÌ CHỈ VIỆC GẮN HỒ SƠ THƯ VIỆN VÀO TRONG MỤC 
+<dependencies>
+   <dependency>
+       hồ sơ file jar 3 info
+THÌ LẬP TỨC MAVEN PHÍA HẬU TRƯỜNG BIẾT CÁCH LÊN TRÊN KHO TỔNG MVNREPO TÌM VÀ TẢI VỀ (.M2) VÀ ADD VÀO PROJECT, CƠ CHẾ TỰ ĐỘNG, GIÚP GIẢM NHẸ VIỆC QUẢN LÝ CÁC THƯ VIỆN, TẢI THƯ VIỆN TRÊN MẠNG VỀ MÁY
+
+- DO ĐÓ KHI NEW MỚI PROJECT, HÃY KHAI BÁO CÁC THƯ VIỆN CẦN DÙNG THEO CÚ PHÁP 3 INFO VÀ ĐỂ VÀO FILE POM.XML, MAVEN LO PHẦN CÒN LẠI CÚ PHÁP NÀY KO CẦN NHỚ, LÊN KHO TỔNG CÓ LUÔN
+
+- VẬY THƯ VIỆN ĐC TẢI VỀ GIÚP TA VIẾT CODE DỄ DÀNG HƠN
+  DO ĐÓ THYW VIỆN DC GỌI TÊN MỚI: DEPENDENCY, VÀ KHAI BÁO THƯ VIỆN CHÍNH LÀ ADD DÊPNDENCY
+- ĐIỀU NÀY TƯƠNG TỰ CHO REACT, NODEJS, .NET, PYTHON PROJECT
+  ĐỀU KHAI BÁO DEPENDENCY THEO CÚ PHÁP RIÊNG CỦA NÓ, VÀ CŨNG CÓ KHO THƯ VIỆN TƯƠNG ỨNG
+1 file  jar gồm
+   <groupId>com.lpaxxa</groupId>
+    <artifactId>maven-to-go</artifactId>
+   <version>22.04</version>
+
+
+
+<<--------------------------------------------------------------------------------------->>
+
+
+
+GSON - try at home
+
+ 
+NAT
+
+lúc ấn nút edit (BẮT BUỘC)
+-> overlay modal
+-> làm mờ mờ phía sau luôn, để làm nổi cái modal 
+
+
+
+
+
+
