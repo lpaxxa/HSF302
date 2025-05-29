@@ -60,6 +60,9 @@ public class StudentRepo {
         EntityManager em = JPAUtil.getEnityManager();
         return em.find(Student.class, id); //tìm theo id
     }
+    //TODO: VIẾT THÊM HÀM SEARCH BY NAME (LIKE) (RELATIVE SEARCH) OR BY ADDRESS
+    //WHERE NAME LIKE '%abc%' AND/OR ADDRESS LIKE '%abc%'
+    //                :pKw1                   :pKw2
 
 
 }
