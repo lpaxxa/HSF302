@@ -63,6 +63,19 @@ public class StudentRepo {
     //TODO: VIẾT THÊM HÀM SEARCH BY NAME (LIKE) (RELATIVE SEARCH) OR BY ADDRESS
     //WHERE NAME LIKE '%abc%' AND/OR ADDRESS LIKE '%abc%'
     //                :pKw1                   :pKw2
+    public List<Student> searchByNameOrAddress(String kw1, String kw2) {
+        EntityManager em = JPAUtil.getEnityManager();
+        String jpql = "SELECT s FROM Student s WHERE s.name LIKE :pKw1 OR s.address LIKE :pKw2";
+        return em.createQuery(jpql, Student.class)
+                .setParameter("pKw1", "%" + kw1 + "%")
+                .setParameter("pKw2", "%" + kw2 + "%")
+                .getResultList();
+
+
+
+    }
+
+
 
 
 }

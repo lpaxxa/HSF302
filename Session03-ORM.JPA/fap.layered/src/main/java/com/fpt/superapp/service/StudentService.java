@@ -36,4 +36,7 @@ public class StudentService {
     public void updateStudent(Student obj) {
         studentRepo.update(obj);
     }
+    public List<Student> searchByNameOrAddress(String name, String address) {
+        return studentRepo.searchByNameOrAddress(name, address);
+    }
 }

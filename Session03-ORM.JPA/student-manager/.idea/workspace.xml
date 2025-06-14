@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7149b859-ce7d-43b0-be64-15a1cce690d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/bionemany/MainOneMany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/bionemany/Major.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/bionemany/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/unimany/MainUniMany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/unimany/Major.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/unimany/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/unione/MainUniOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/unione/Major.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/entity/unione/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/infra/JPAUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fap.layered/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fap.layered/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fap.layered/src/main/java/com/fpt/superapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fap.layered/src/main/java/com/fpt/superapp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fap.layered/src/main/java/com/fpt/superapp/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fap.layered/src/main/java/com/fpt/superapp/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fap.layered/src/main/java/com/fpt/superapp/repository/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fap.layered/src/main/java/com/fpt/superapp/repository/StudentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fap.layered/src/main/java/com/fpt/superapp/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fap.layered/src/main/java/com/fpt/superapp/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fap.layered/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lpaxxa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lpaxxa/HSF302.git&quot;,
+    &quot;accountId&quot;: &quot;15254872-2b9e-43c0-b224-393983970e30&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2xwLaJTp7VvLjFjZoVLJRN9SaCi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.MainOneMany.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainUniMany.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainUnione.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/amyll/OneDrive/FPT_SEM 5/HSF302/Session03-ORM.JPA/student-manager&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/amyll/OneDrive/FPT_SEM 5/HSF302/Session03-ORM.JPA/student-manager/src/main/java/com/lpaxxa/superapp/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amyll\OneDrive\FPT_SEM 5\HSF302\Session03-ORM.JPA\student-manager\src\main\java\com\lpaxxa\superapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amyll\OneDrive\FPT_SEM 5\HSF302\Session03-ORM.JPA\student-manager\src\main\resources\META-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainOneMany">
+    <configuration name="MainOneMany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpaxxa.superapp.entity.bionemany.MainOneMany" />
+      <module name="student-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpaxxa.superapp.entity.bionemany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainUniMany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpaxxa.superapp.entity.unimany.MainUniMany" />
+      <module name="student-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpaxxa.superapp.entity.unimany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainUniOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpaxxa.superapp.entity.unione.MainUniOne" />
+      <module name="student-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpaxxa.superapp.entity.unione.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainOneMany" />
+        <item itemvalue="Application.MainUniMany" />
+        <item itemvalue="Application.MainUniOne" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7149b859-ce7d-43b0-be64-15a1cce690d6" name="Changes" comment="" />
+      <created>1748844252932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748844252932</updated>
+      <workItem from="1748844254125" duration="58000" />
+      <workItem from="1748844337534" duration="6303000" />
+      <workItem from="1748851477235" duration="1053000" />
+      <workItem from="1749102335159" duration="6716000" />
+      <workItem from="1749112677414" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lpaxxa/superapp/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

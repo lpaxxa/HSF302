@@ -1,27 +1,25 @@
-package com.fpt.superapp.entity;
+package com.lpaxxa.superapp.entity.unimany;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.lpaxxa.superapp.entity.unimany.Major;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Entity
-@Table(name = "Student")
+//@Entity
+//@Table(name = "Student")
+//@Data
+//
+//@NoArgsConstructor
+
 public class Student {
     @Id
-    @Column(name = "Id", columnDefinition = "CHAR(8)")
+    @Column(name = "Id", columnDefinition = "VARCHAR(50)")//  mã chuyên ngành 2 kí tự
     private String id;
-    @Column(name = "Name", columnDefinition = "NVARCHAR(50)",nullable = false)
+    @Column(name = "Name", columnDefinition = "NVARCHAR(50)", nullable = false)
     private String name;
     @Column(name = "Yob", nullable = false)
     private int yob;
     @Column(name = "Gpa")
     private double gpa;
-    @Column(name= "Address", columnDefinition = "NVARCHAR(100)")
-    private String address;
-
-    public Student() {
-    }
 
     public Student(String id, String name, int yob, double gpa) {
         this.id = id;
@@ -29,13 +27,16 @@ public class Student {
         this.yob = yob;
         this.gpa = gpa;
     }
-    public Student(String id, String name, int yob, double gpa, String address) {
-        this.id = id;
-        this.name = name;
-        this.yob = yob;
-        this.gpa = gpa;
-        this.address = address;
-    }
+
+
+    //mối quan hệ: 1 SV thuộc 1 chuyên ngành
+    @ManyToOne(fetch = FetchType.LAZY)// mỗi lần gọi sv lên, ko cần gọi cả họ major
+    @JoinColumn(name = "MajorId") // tên cột FK ở bên table Student
+    private Major major;
+
+    //GET SET DEER BIEETS SV THUỘC CHUYÊN NGÀNH NÀO; BEEN KIA THÌ ADD SV VÀO CHUYÊN NGÀNH; XÓA SV KHỎI CHUYÊN NGÀNH
+    // public Major getMajor() {
+    // public setMajor()
 
     public String getId() {
         return id;
@@ -69,12 +70,14 @@ public class Student {
         this.gpa = gpa;
     }
 
-    public String getAddress() {
-        return address;
+    public Major getMajor() {
+        return major;
     }
-    public void setAddress(String address) {
-        this.address = address;
+
+    public void setMajor(Major major) {
+        this.major = major;
     }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -82,7 +85,8 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", yob=" + yob +
                 ", gpa=" + gpa +
-                ", address='" + address + '\'' +
+                ", major=" + major.getName() +
                 '}';
     }
 }
+

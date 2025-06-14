@@ -101,6 +101,66 @@ lúc ấn nút edit (BẮT BUỘC)
 -> làm mờ mờ phía sau luôn, để làm nổi cái modal 
 
 
+<<---------------------------------------------------------------------------------------->>
+GIẢI NGỐ VỀ:    DI (DEPENDENCY INJECTION)
+ 	        IoC ( INVERSION OF CONTROL)
+		SRP(SINGLE RESPONSIBILITY PRINCIPLE) S TRONG SOLID
+		O (OPEN CLOSED PRINCIPLE) 	O TRONG SOLID
+		TIGHT COUPLING, LOOSE COUPLING
+
+I.DEPENDENCY LÀ GÌ ???
+- CLASS A nhờ vả, gọi class B trợ giúp dể B xử lí 1 việc mà B giỏi
+- A sử dụng B, B gọi là dependency của A. A phụ thuộc dependent on B
+
+
+public class A{
+
+private B bObj;//B, bObj là dependency của A, A phụ thuộc B
+// new B() ở chỗ nào???, new là tạo Object, class chỉ là cái khuông khung
+					// new là tạo RAM obj clone từ khung
+					// khi đó mới có code trong RAM để run
+
+}
+
+public class B{
+//B chuyên, giỏi làm việc gì đó...
+}
+
+// CHỦ ĐỘNG NEW DEPENDENCY 
+public class A{
+
+private B bObj = new B(); // TIGHT COUPLING - A GẮN CHẶT VỚI B
+			// NEW A LÀ CÓ B, KIỂM SOÁT VIỆC TẠO OBJECT B
+public void doF(){       // DIRECT CONTROL, CHỦ ĐỘNG KIỂM SOÁT VIỆC TẠO
+bObj. gọi hàm của B	// DEPENDENCY TRONG CLASS A SỬ DỤNG B
+}
+}
+
+// TỪ BỎ VIỆC CHỦ ĐỘNG NEW DEPENDENCY 
+public class A{
+
+private B bObj ; // A KO CHỦ ĐỘNG NEW B, MÀ B ĐC NEW VÀ ĐC TRUYỀN TỪ NGOÀI VÀO
+		// TỪ NGOÀI VÀO ĐC GỌI LÀ TIÊM/CHÍCH/INJECT
+
+public A(B obj){ // ĐOẠN CODE TIÊM/CHÍCH OBJECT TỪ NGOÀI VÀO
+    this.obj = obj;
+}
+
+public void doF(){       // DIRECT CONTROL, CHỦ ĐỘNG KIỂM SOÁT VIỆC TẠO
+   bObj. gọi hàm của B	// DEPENDENCY TRONG CLASS A SỬ DỤNG B
+}
+}
+
+
+
+// NGOÀI ĐỜI, MỖI NGƯỜI CHUYÊN 1 MÓN, SẼ NHỜ NGƯỜI GIÚP MÌNH KO GIỎI, KO TIỆN LÀM
+- Mình order đồ ăn, nhờ shop, nhờ Shipper
+- Mình xử lý kịch bản game, xử lý nhân vật, phần render fdepj nhờ con GTX/ card đồ họa giúp
+- Mình muốn có bản copy về cuốn sách, cuốn đồ án, giáo trình
+	mình nhờ tiệm photo
+- Mua bán nhà, nhờ môi giới
+
+
 
 
 
