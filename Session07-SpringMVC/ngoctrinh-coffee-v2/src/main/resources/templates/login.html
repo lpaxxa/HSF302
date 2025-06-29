@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Login to the Ngọc Trinh Coffee System</h1>
+<form th:action="@{/doLogin}" method="post">
+    <p style="text-align: center">
+        <label for="email">Email</label>
+        <input type="text"  name="email" id="email">
+    </p>
+    <p style="text-align: center">
+        <label for="password">Password</label>
+        <input type="password"  name="pass" id="password">
+
+    </p>
+    <p style="text-align: center">
+       <button type="submit">Login</button>
+    </p>
+</form>
+<footer style="text-align: center">&#169; 2025 giáo.làng</footer>
+
+</body>
+</html>

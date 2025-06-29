@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit | Create a Product</title>
+</head>
+<body>
+<h1>Edit | Create a Product</h1>
+<h2 th:text="${selectedId}">????</h2>
+<!--PHẢI CÓ FORM, O NHẬP THÔNG TIN: ID, NAME, PRICE
+NGƯỜI DÙNG NHẤN SAVE THÌ: INSERT, HOẶC UPDATE TÙY EIT MODE-->
+<!--NHÉT TOÀN BỘ Ô NHẬP VÀO FORM VÀ PHẢI CÓ 1 URL ĐỂ BẮT SERVER LÀM GÌ ĐÓ KHI NHẤN NÚT GỬI FORM-->
+
+<form th:action="@{/products/save}" method="post">
+    <p>
+        <!--Nếu key tự tăng ta giấu id, ko cho gõ, dùng  type="hidden"-->
+        <label for="id">Id: </label>
+        <input type="text"  name="id" id="id" th:value="${selectedProduct.id}">
+    </p>
+    <p>
+        <label for="name">Name: </label>
+        <input type="text"  name="name" id="name" th:value="${selectedProduct.name}">
+    </p>
+
+    <p>
+        <label for="price">Email: </label>
+        <input type="text"  name="price" id="price" th:value="${selectedProduct.price}">
+    </p>
+    <p>
+        <button type="submit">Save</button>
+    </p>
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title> Ngọc Trinh products</title>
+</head>
+<body>
+<!-- Script alert sau khi trang load xong -->
+<script th:if="${noti}" th:inline="javascript">
+    window.addEventListener('load', function() {
+        // Thymeleaf sẽ render thành: alert("…");
+        alert([[${noti}]]);
+    });
+</script>
+<h1 > The List of Ngọc Trinh Coffee Products</h1>
+<h2 th:text="${msg}"></h2>
+<h2  th:text="'Xin chaof/ Hello' + ${sentEmail}"></h2>
+<!--show thông báo thành công trong việc update/create, chặn lệnh if vì đề phòng màn hình này gọi từ login-->
+<p th:if="${noti}" th:text="'STATUS: ' + ${noti} +'| Product Name: ' + ${selectedName}" style="color: red">HAHAHAHHHAAH</p>
+
+<P th:if="${role == 1}">
+    <a th:href="@{'/products/new/'}" >Tạo Mới</a>
+</P>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <!--admin mới show dòng này, role lấy từ login chuyển đính èm sang model của ProductController-->
+            <th th:if="${role == 1}">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr th:each="x: ${products}">
+        <td th:text="${x.id}" >???</td>
+        <td th:text="${x.name}" >???</td>
+        <td th:text="${x.price}" >???</td>
+
+       <td th:if="${role == 1}">
+<!--           <a th:href="@{/products/{nt}(nt=${x.id})}"> Edit</a>-->
+           <a th:href="@{'/products/edit/'+${x.id}}" >Edit</a>
+           <a th:href="@{'/products/delete/'+${x.id}}" >Delete</a>
+       </td>
+    </tr>
+    </tbody>
+
+</table>
+
+
+
+
+
+</body>
+</html>
